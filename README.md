@@ -5,9 +5,9 @@ This network monitoring tool will periodically check the availability of given e
 You have to create your own input file with endpoints, period of time in seconds and number of maximum attempts.
 File must be named "input.txt".
 Format of file has to be like this:
-Number of seconds representing period of time on 1st line
-Number of maximum attempts on 2nd line
-Then specify endpoints as IPv4 addresses on each line 
+* Number of seconds representing period of time on 1st line
+* Number of maximum attempts on 2nd line
+* Then specify endpoints as IPv4 addresses on each line 
 
 If you want to see example how it should look like, look at "input.txt" in this repository.
 
