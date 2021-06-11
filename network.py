@@ -48,7 +48,7 @@ def timed_pings(endpoints, period, max_attempts):
     output = open("output.txt", "w")
     lines = []
     for endpoint in endpoints:
-        lines.append(endpoint + " 0 0 -\n")
+        lines.append(endpoint + " 0 0 0 0 -\n")
     output.writelines(lines)
     output.close()
 
@@ -70,10 +70,14 @@ def timed_pings(endpoints, period, max_attempts):
                 lines[i][1] = str(int(lines[i][1]) + 1)
                 if not success:
                     lines[i][2] = str(int(lines[i][2]) + 1)
-                lines[i][3] = str(datetime.fromtimestamp
+                else:
+                    lines[i][3] = str(int(lines[i][3]) + 1)
+                lines[i][4] = str(int(lines[i][2]) / int(lines[i][1]))
+                lines[i][5] = str(datetime.fromtimestamp
                                   (datetime.timestamp(datetime.now())))
                 lines[i] = lines[i][0] + " " + lines[i][1] + " " + \
-                           lines[i][2] + " " + lines[i][3] + "\n"
+                           lines[i][2] + " " + lines[i][3] + " " + lines[i][4] \
+                           + " " + lines[i][5] + "\n"
                 with open("output.txt", "w") as output:
                     output.writelines(lines)
             start = time.time()
