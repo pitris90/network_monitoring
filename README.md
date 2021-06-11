@@ -14,7 +14,7 @@ If you want to see example how it should look like, look at "input.txt" in this 
 After you have setuped your "input.txt" file, execute command ./network.py
 
 When it ends, output file will contain on each line these information: 
-  endpoint written as IPv4 address
-  total number of attempts for that endpoint
-  number of failed attempts
-  timestamp of last attempt to ping that enpoint
+* endpoint written as IPv4 address
+* total number of attempts for that endpoint
+* number of failed attempts
+* timestamp of last attempt to ping that enpoint
