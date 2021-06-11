@@ -20,3 +20,5 @@ When it ends, output file will contain on each line these information:
 * number of successful attempts
 * failure rate as decimal number
 * timestamp of last attempt to ping that enpoint
+
+You can see example "output.txt" file for given example "input.txt" file.
