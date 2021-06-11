@@ -17,4 +17,6 @@ When it ends, output file will contain on each line these information:
 * endpoint written as IPv4 address
 * total number of attempts for that endpoint
 * number of failed attempts
+* number of successful attempts
+* failure rate as decimal number
 * timestamp of last attempt to ping that enpoint
